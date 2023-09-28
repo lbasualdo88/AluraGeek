@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/globales.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/hero.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/contacto.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="header__logo">
+                <a class="logo_imagenes" href="index.html">
+                    <img class="img__logoControl" src="/img/iconos/AluraControl.svg" alt="Logo Control">
+                    <img class="img__logoAlura" src="/img/iconos/logoAluraGeek.svg" alt="Logo AluraGeek">
+                </a>
+            </div>
+            <div class="header__busqueda">
+                <input class="input__busqueda" type="search" placeholder="¿Que deseas buscar?" name="busqueda">
+                <a href="#"><img class="img__lupa" src="/img/iconos/lupa.svg" alt="Lupa"></a>
+            </div>
+        </div>
+    </header>
+    <section>
+        <form class="login">
+            <h3 class="login__titulo">Iniciar Sesion de Administrador</h3>
+            <div class="login__input">
+                <input class="input_email input_login" type="email" placeholder="Escriba su correo electronico" required data-tipo="email" name="email">
+                <span class="input-mensaje-error"></span>
+            </div>
+            <div class="login__input">
+                <input class="input_contraseña input_login" type="text" autocomplete=“current-password” pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{6,12}$" placeholder="Escriba su contraseña" required data-tipo="password" name="password">
+                <span class="input-mensaje-error"></span>
+            </div>
+            <a href="Inventario.html"><button class="form__btn btn_entrar">Entrar</button></a>
+        </form>
+    </section>
+    <section>
+        <div class="contacto">
+            <div class="contacto__nav">
+                <div class="logo_imagenes">
+                    <img class="img__logoControl" src="/img/iconos/AluraControl.svg" alt="Logo Control">
+                    <img class="img__logoAlura" src="/img/iconos/logoAluraGeek.svg" alt="Logo AluraGeek">
+                </div>
+                <a class="nav" href="">Quienes somos</a>
+                <a class="nav" href="">Politica de privacidad</a>
+                <a class="nav" href="">Programa de fidelidad</a>
+                <a class="nav" href="">Nuestras tiendas</a>
+                <a class="nav" href="">Quiero ser franquiciado</a>
+                <a class="nav" href="">Anúncie aquí</a>
+            </div>
+            <div class="contacto__form">
+                    <form action="" class="formulario">
+                        <h3 class="formulario__h3">Hable con nosotros</h3>
+                        <div class="formulario__div-nombre">
+                            <input class="input-text form__input input-invalido" type="text" required data-tipo="nombre" name="name" placeholder="Nombre">
+                            <span class="input-mensaje-error"></span>
+                        </div>
+                        <div class="formulario__div-textarea">
+                            <textarea class="input-text form__textarea input-invalido" type="text" required data-tipo="textarea" name="message" placeholder="Mensaje"></textarea>
+                            <span class="input-mensaje-error"></span>
+                        </div>
+                        <button class="form__btn" type="submit">Enviar Mensaje</button>
+                    </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <p class="footer_p">Desarrollado por Leonardo Basualdo</p>
+            <p class="footer_p">2023</p>
+        </div>
+    </footer>
+    <script src="/js/Validaciones/contacto-validar.js"></script>
+    <script src="/js/Validaciones/login-validar.js"></script>
+    <script src="/js/Validaciones/login-sesion.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+:root {
+    --colorNegro: #000000;
+    --colorBlanco: #fff;
+    --color1: #2A7AE4;
+    --color2:  #F5F5F5;
+    --color3: #EAF2FD;
+    --color4: #A2A2A2;
+    --color5: #464646;
+    --fuente: Raleway;
+
+
+
+}
+html{
+    font-size: 62.5%; /*ayuda a que la medida rem se adapte a distintas pantallas */
+    box-sizing: border-box; /* Hack para box model *//*ayuda a que no se generen conflicto de medidas con el pading*/
+    scroll-snap-type: y mandatory;
+}
+
+*, *:before, *:after {box-sizing: inherit; } /*ayuda a que no se generen conflicto de medidas con el pading*/
+body{
+    font-size: 16px; /* 1rem = 10px */ /*ayuda a que la medida rem se adapte a distintas pantallas */
+    font-family: 'Krub', sans-serif;
+    background-image: linear-gradient(to top, var(--color6) 0%, var(--Color1) 100% );
+    
+}

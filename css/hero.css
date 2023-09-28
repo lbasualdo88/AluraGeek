@@ -1,0 +1,97 @@
+.hero {
+    background-image: url(/img/Hero/football-ball-sport-soccer-50713.jpeg);
+    background-size: cover;
+    background-position: 50% 60%;
+    display: flex;
+    height: auto;
+    padding: 16px;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 8px;
+    align-self: stretch;
+}
+.hero__h1 {
+    color: var(--color2);
+    font-family: var(--fuente);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgb(126, 124, 124);
+}
+.hero__h3 {
+    margin: 0;
+    color: var(--color2);
+    font-family: var(--fuente);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-shadow: 2px 2px 5px rgb(126, 124, 124);
+}
+.hero__btn {
+    font-size: 14px;
+    font-family: var(--fuente);
+    padding: 12px 16px;
+    width: 118px;
+    height: auto;
+    color: var(--colorBlanco);
+    background-color: var(--color1);
+    border: none;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 1rem;
+}
+
+@media (min-width: 900px){
+    .hero { 
+        background-size: cover;
+        background-position: 50% 60%;
+        padding: 32px;
+        height: auto;
+        
+    }
+    .hero__h1 {
+        color: var(--color2);
+        font-family: var(--fuente);
+        font-size: 52px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin: 0;
+        text-shadow: 2px 2px 5px rgb(126, 124, 124);
+    }
+    .hero__h3 {
+        margin: 0;
+        color: var(--color2);
+        font-family: Raleway;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-shadow: 2px 2px 5px rgb(126, 124, 124);
+    }
+    .hero__btn {
+        font-size: 16px;
+        width: 129px;
+        height: auto;
+
+    }
+}
+@media (min-width: 576px) and (max-width: 899px) {
+    .hero { 
+        background-size: cover;
+        background-position: 50% 60%;
+        height: auto;
+        
+    }
+    .hero__h1 {
+        font-size: 52px;
+    }
+    .hero__h3{
+        font-size: 22px;
+        font-weight: 700;
+    }
+}

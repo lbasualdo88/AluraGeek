@@ -1,0 +1,17 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    padding: 32px;
+    height: auto;
+}
+.footer_p{
+    color: var(--color5);
+    font-family: var(--fuente);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: .5rem;
+}

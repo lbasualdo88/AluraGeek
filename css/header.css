@@ -1,0 +1,170 @@
+.header {
+    display: flex;
+    width: auto;
+    height: 72px;
+    padding: 16px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    position: relative;
+    margin-bottom: 20px;
+}
+.header__busqueda {
+   order: 3;
+}
+.input__busqueda {
+    display: none;
+}
+.img__lupa {
+    width: 24px;
+    height: 24px;
+}
+.header__login {
+    display: flex;
+    width: min(90px, 133px);
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid var(--color1);
+}
+.header__cliente {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 20px;
+    top: 70px;
+    margin: 0;
+    right: -.9px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--color1);
+    background: var(--color1);
+}
+.p_cliente{
+    text-align: center;
+    color: var(--colorBlanco);
+    font-family: var(--fuente);
+    font-size: 12px;
+    font-weight: 500;
+}
+.btn {
+    color: var(--color1);
+    border: none;
+    background-color: #ffff;
+    font-family: var(--fuente);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+@media (min-width: 900px) {
+    .header {
+        display: flex;
+        width: auto;
+        height: 115px;
+        padding: 32px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo_imagenes{
+        display: flex;
+        width: 176px;
+        justify-content: center;
+        align-items: center;
+    }
+    .img__logoControl {
+        width: 30px;
+        height: auto;
+        flex-shrink: 0;
+    }
+    .img__logoAlura {
+        width: 90px;
+        height: auto;
+        flex-shrink: 0;
+    }
+    .header__busqueda {
+        display: flex;
+        width: 393px;
+        padding: 8px 16px;
+        align-items: center;
+        gap: 8px;
+        order: 0;
+        position: relative;
+     }
+     .input__busqueda {
+        display: flex;
+        align-items: flex-start;
+        flex: 1 0 0;
+        padding: 8px 16px;
+        background-color: var(--color2);
+        border-radius: 2rem;
+        border: none;
+     }
+     .img__lupa {
+        position: absolute;
+        right: 34px;
+        bottom: 12px;
+     }
+    .header__login{
+        display: flex;
+        width: 182px;
+
+        padding: 11px 16px 10px 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+    }
+    .btn{
+        color: var(--color1);
+        border: none;
+        background-color: #ffff;
+        font-family: var(--fuente);
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .header__cliente{
+        width: 182px;
+        position: initial;
+        height: 42px;
+        margin-right: .5rem;
+    }
+    .p_cliente{
+        font-size: 16px;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 899px){
+    .header__busqueda {
+        order: 0;
+        display: flex;
+        position: relative;
+        align-items: center;
+     }
+     .input__busqueda {
+        display: flex;
+         border: none;
+         width: 272px;
+         background-color: var(--color2);
+         padding: 8px 16px;
+         border-radius: 2rem;
+         height: auto;
+     }
+     .img__lupa{
+        position: absolute;
+        right: 10px;
+        bottom: 5px;
+     }
+     .header__login{
+        width: 166px;
+     }
+    .header__cliente{
+        width: 100px;
+        position: initial;
+        height: 40px;
+    }
+   
+}
+
+

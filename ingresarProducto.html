@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/globales.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/agregarProducto.css">
+    <link rel="stylesheet" href="/css/contacto.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="header__logo header__logo-administrador">
+                <a class="logo-imagenes" href="index.html">
+                    <img class="img-logoControl" src="/img/iconos/AluraControl.svg" alt="Logo Control">
+                    <img class="img-logoAlura" src="/img/iconos/logoAluraGeek.svg" alt="Logo AluraGeek">
+                </a>
+            </div>
+            <div class="header__busqueda">
+                <input class="input__busqueda" type="search" placeholder="¿Que deseas buscar?" name="busqueda">
+                <a href="#"><img class="img__lupa" src="/img/iconos/lupa.svg" alt="Lupa"></a>
+            </div>
+            <div class="header-administrador">
+                <button class="btn-administrador">Menu Administrador</button>
+            </div>
+        </div>
+    </header>
+    <section>
+        <form data-form>
+        <div class="login">
+            <h3 class="login-titulo">Agregar nuevo producto</h3>
+            <div class="login-input">
+                <input 
+                class="input_email" 
+                type="text" 
+                placeholder="URL de la imagen"
+                required
+                data-url>
+                
+            </div>
+            <div class="login-input">
+                <input 
+                class="input_email" 
+                type="text" 
+                placeholder="Nombre del producto"
+                required
+                data-name>
+            </div>
+            <div class="login-input">
+                <input 
+                class="input_contraseña" 
+                type="text" 
+                placeholder="Precio del producto"
+                required
+                data-precio>
+            </div>
+            <div class="login-input">
+                <textarea 
+                class="input_contraseña" 
+                type="text" 
+                placeholder="Descripcion del producto"
+                required
+                data-descripcion></textarea>
+            </div>
+            <a href="Inventario.html"><button class="form__btn btn-entrar">Agregar Producto</button></a>
+        </div>
+    </form>
+    </section>
+    <section>
+        <div class="contacto">
+            <div class="contacto__nav">
+                <div class="logo_imagenes">
+                    <img class="img__logoControl" src="/img/iconos/AluraControl.svg" alt="Logo Control">
+                    <img class="img__logoAlura" src="/img/iconos/logoAluraGeek.svg" alt="Logo AluraGeek">
+                </div>
+                <a class="nav" href="">Quienes somos</a>
+                <a class="nav" href="">Politica de privacidad</a>
+                <a class="nav" href="">Programa de fidelidad</a>
+                <a class="nav" href="">Nuestras tiendas</a>
+                <a class="nav" href="">Quiero ser franquiciado</a>
+                <a class="nav" href="">Anúncie aquí</a>
+            </div>
+            <div class="contacto__form">
+                    <form action="" class="formulario">
+                        <h3 class="formulario__h3">Hable con nosotros</h3>
+                        <div class="formulario__div-nombre">
+                            <input class="input-text form__input input-invalido" type="text" required data-tipo="nombre" name="name" placeholder="Nombre">
+                            <span class="input-mensaje-error"></span>
+                        </div>
+                        <div class="formulario__div-textarea">
+                            <textarea class="input-text form__textarea input-invalido" type="text" required data-tipo="textarea" name="message" placeholder="Mensaje"></textarea>
+                            <span class="input-mensaje-error"></span>
+                        </div>
+                        <button class="form__btn" type="submit">Enviar Mensaje</button>
+                    </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <p class="footer_p">Desarrollado por Leonardo Basualdo</p>
+            <p class="footer_p">2023</p>
+        </div>
+    </footer>
+    <script type="module" src="/js/Controles/crear-producto.js"></script>
+    <script src="/js/Validaciones/contacto-validar.js"></script>
+</body>
+</html>
