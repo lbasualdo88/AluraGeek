@@ -1,21 +1,21 @@
 {
   "pelotas": [
     {
-      "name": "Pelota 1",
+      "name": "Pelota1",
       "precio": "$2300",
       "imagen": "../img/productos/pelota-1.jpg",
       "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur unde suscipit, quam ",
       "id": 0
     },
     {
-      "name": "Pelota 2",
+      "name": "Pelota2",
       "precio": "$3400",
       "imagen": "/img/productos/pelota-2.jpg",
       "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur unde suscipit, quam ",
       "id": 1
     },
     {
-      "name": "Pelota 3",
+      "name": "Pelota3",
       "precio": "$4500",
       "imagen": "././img/productos/pelota-3.jpg",
       "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur unde suscipit, quam ",

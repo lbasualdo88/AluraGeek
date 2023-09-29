@@ -15,6 +15,16 @@
 .input__busqueda {
     display: none;
 }
+.input__busqueda::-webkit-search-cancel-button{
+    display: none;
+}
+.input__busqueda::-ms-clear {
+    display: none;
+  }
+.input__busqueda:focus{
+    border: 2px solid var(--color1);
+  outline: none;
+}
 .img__lupa {
     width: 24px;
     height: 24px;

@@ -1,3 +1,4 @@
+
 .login {
     background: var(--color2);
     width: 100%;
@@ -20,8 +21,10 @@
     background: var(--colorBlanco);
     width: 275px;
     height: 41px;
-    padding-top: 8px;
+    padding-top: 4px;
     box-shadow: 0 1px var(--color4);
+    position: relative;
+    margin-top: .5rem;
 }
 .input_email {
     color: var(--color4);
@@ -58,6 +61,13 @@
 .btn_entrar:hover{
     cursor: pointer;
 }
+.input_mensaje_error{
+    position: absolute;
+    color: var(--color1);
+    font-size: 14px;
+    left: 1rem;
+    top: 5rem;
+}
 @media (min-width: 900px){
     .login__input {
         width: 423px;
@@ -69,6 +79,14 @@
     }
     .btn_entrar{
         width: 423px !important;
+    }
+    .input_mensaje_error{
+        position: absolute;
+        color: var(--color1);
+        font-size: 14px;
+        margin: 1rem;
+        left: 1rem;
+        top: 6rem;
     }
 }
 @media (min-width: 576px) and (max-width: 899px){

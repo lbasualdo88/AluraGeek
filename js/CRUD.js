@@ -17,9 +17,13 @@ const crearProducto =(name, precio, imagen, descripcion) => {
          method: "DELETE",
  });
  };
-
+//Detalle by id
  const detalleProducto = (id) => {
      return fetch(`http://localhost:3000/pelotas/${id}`).then((respuesta) => respuesta.json());
+ };
+//Detalle by name
+ const detallePorNombreProducto = (name) => {
+     return fetch(`http://localhost:3000/pelotas?${name}`).then((respuesta) => respuesta.json());
  };
 
 //UPDATE
@@ -38,4 +42,5 @@ export const clientServices = {
     eliminarProducto,
     detalleProducto,
     actualizarProducto,
+    detallePorNombreProducto,
 }

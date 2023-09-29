@@ -127,7 +127,7 @@
 }
 .input-mensaje-error {
     color: var(--color1);
-margin: 1rem;
+    margin: 1rem;
 }
 span {
     width: 305px;

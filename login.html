@@ -34,12 +34,12 @@
         <form class="login">
             <h3 class="login__titulo">Iniciar Sesion de Administrador</h3>
             <div class="login__input">
-                <input class="input_email input_login" type="email" placeholder="Escriba su correo electronico" required data-tipo="email" name="email">
-                <span class="input-mensaje-error"></span>
+                <input class="input_email input_login input-invalido" type="email" placeholder="Escriba su correo electronico" required data-tipo="email" name="email">
+                <span class="input_mensaje_error"></span>
             </div>
             <div class="login__input">
-                <input class="input_contraseña input_login" type="text" autocomplete=“current-password” pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{6,12}$" placeholder="Escriba su contraseña" required data-tipo="password" name="password">
-                <span class="input-mensaje-error"></span>
+                <input class="input_contraseña input_login input-invalido" type="text" autocomplete=“current-password” pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{6,12}$" placeholder="Escriba su contraseña" required data-tipo="password" name="password">
+                <span class="input_mensaje_error"></span>
             </div>
             <a href="Inventario.html"><button class="form__btn btn_entrar">Entrar</button></a>
         </form>
@@ -81,7 +81,6 @@
         </div>
     </footer>
     <script src="/js/Validaciones/contacto-validar.js"></script>
-    <script src="/js/Validaciones/login-validar.js"></script>
-    <script src="/js/Validaciones/login-sesion.js"></script>
+    <script type="module" src="/js/Validaciones/login-validar.js"></script>
 </body>
 </html>

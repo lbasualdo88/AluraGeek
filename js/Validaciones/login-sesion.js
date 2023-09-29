@@ -1,10 +1,10 @@
+
+export function validarSesion(){
+
 const input_email = document.querySelector(".input_email")
 console.log(input_email)
 const input_contraseña = document.querySelector(".input_contraseña")
 console.log(input_contraseña)
-
-
-
 
 const button = document.querySelector(".btn_entrar")
 
@@ -28,8 +28,8 @@ button.addEventListener('click', (e)=>{
             window.location.href = "../../Inventario.html"
             console.log("logeado")
         } else {
+            alert("Email o contraseña incorrecta")
             console.log("no entro")
         }
     }).catch((error)=> console.log(error))
-
-})
+})}

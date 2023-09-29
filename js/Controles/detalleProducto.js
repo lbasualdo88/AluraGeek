@@ -19,8 +19,9 @@ const descripcionProducto = (name, precio, imagen, descripcion, id) =>{
 }
 
 const url = new URL(window.location);
+
 const id = url.searchParams.get("id");
-console.log("id ", id)
+
 
 const divProductos = document.querySelector('[data-productoDescripcion]');
 if (id){
