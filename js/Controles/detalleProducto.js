@@ -26,16 +26,15 @@ const id = url.searchParams.get("id");
 const divProductos = document.querySelector('[data-productoDescripcion]');
 if (id){
 clientServices.detalleProducto(id).then((data)=>{
-    console.log(data)
-    // Usar el objeto JSON como argumento de la función descripcionProducto ()
+
     const nuevoDiv = descripcionProducto(data.name, data.precio, data.imagen, data.descripcion);
-    console.log(nuevoDiv)
+
     divProductos.appendChild(nuevoDiv);
 }).catch((error) => {
-    // Ver el mensaje de error
-    console.log(error);
-    alert("Ocurrio un error 2")
+    console.error(error)
+    /* alert("Ocurrio un error") */
 });
 }
+
 
 

@@ -26,8 +26,8 @@
                 </a>
             </div>
             <div class="header__busqueda">
-                <input class="input__busqueda" type="search" placeholder="¿Que deseas buscar?" name="busqueda">
-                <a href="#"><img class="img__lupa" src="/img/iconos/lupa.svg" alt="Lupa"></a>
+                <input id="input-busqueda" type="search" class="input__busqueda" type="search" placeholder="¿Que deseas buscar?" name="busqueda">
+                <a data-name><img id="img-lupa" class="img__lupa" src="/img/iconos/lupa.svg" alt="Lupa"></a>
             </div>
             <div class="header-administrador">
                 <button class="btn-administrador">Menu Administrador</button>
@@ -81,7 +81,8 @@
             <p class="footer_p">2023</p>
         </div>
     </footer>
+ <script type="module" src="/js/Busqueda/obteneValorName.js"></script>
  <script type="module" src="/js/Controles/administrador-controller.js"></script>
- <script src="/js/Validaciones/contacto-validar.js"></script>
+ <script type="module" src="/js/Validaciones/contacto-validar.js"></script>
 </body>
 </html>

@@ -23,7 +23,7 @@ const crearProducto =(name, precio, imagen, descripcion) => {
  };
 //Detalle by name
  const detallePorNombreProducto = (name) => {
-     return fetch(`http://localhost:3000/pelotas?${name}`).then((respuesta) => respuesta.json());
+     return fetch(`http://localhost:3000/pelotas?name=${name}`).then((respuesta) => respuesta.json());
  };
 
 //UPDATE

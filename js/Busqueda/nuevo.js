@@ -1,27 +1,37 @@
 import { clientServices } from './../CRUD.js';
-import { crearDiv } from './busqueda.js';
+document.addEventListener('DOMContentLoaded', function() {
+const descripcionProducto = (name, precio, imagen, descripcion, id) =>{
+    const div = document.createElement("div");
+    const contenido = `
+    <div class="container_producto">
+        <div class="producto_img">
+            <img class="img-producto" src="${imagen}" alt="pelota 1">
+        </div>
+        <div class="producto_descripcion">
+            <h2 class="titulo">${name}</h2>
+            <p class="precio-producto">${precio}</p>
+            <p class="descripcion">${descripcion}</p>
+        </div>
+    </div>`
+    div.innerHTML = contenido;
+    return div
+}
+const url = new URL(window.location);
 
-const input = document.getElementById("input-busqueda")
+const name = url.searchParams.get("name");
 
-const lupa = document.getElementById("img-lupa")
+    const divProductos = document.querySelector('[data-productoDescripcion]');
 
-lupa.addEventListener('click', ()=>{
-    const name = input.value
-    console.log("el click, ", name)
-
+    
     clientServices.detallePorNombreProducto(name).then((data)=>{
-        console.log(data)
-        data.forEach(aux => {
-            if (name === aux.name.toLowerCase()) {
-                console.log("ENTRO ", aux.name)
-                const divProductos = document.querySelector('[data-productoDescripcion]');
-                console.log(divProductos)
-                const nuevoDiv = crearDiv.descripcionProducto(data.name, data.precio, data.imagen, data.descripcion)
-                divProductos.appendChild(nuevoDiv);
-            }
-        });
+
+        const producto = data[0]
+        const nuevoDiv = descripcionProducto(producto.name, producto.precio, producto.imagen, producto.descripcion)
+        divProductos.appendChild(nuevoDiv);       
     }).catch((error) => {
-        console.log(error);
-        alert("Ocurrio un error 5")
+        console.error(error)
+        /* alert("Ocurrio un error") */
     });
-})
+});
+
+

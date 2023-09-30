@@ -24,8 +24,8 @@
                 </a>
             </div>
             <div class="header__busqueda">
-                <input class="input__busqueda" type="search" placeholder="¿Que deseas buscar?" name="busqueda">
-                <a href="#"><img class="img__lupa" src="/img/iconos/lupa.svg" alt="Lupa"></a>
+                <input id="input-busqueda" type="search" class="input__busqueda" type="search" placeholder="¿Que deseas buscar?" name="busqueda">
+                <a data-name><img id="img-lupa" class="img__lupa" src="/img/iconos/lupa.svg" alt="Lupa"></a>
             </div>
             <div class="header-administrador">
                 <button class="btn-administrador">Menu Administrador</button>
@@ -35,7 +35,7 @@
     <section>
         <form data-form>
         <div class="login">
-            <h3 class="login-titulo">Agregar nuevo producto</h3>
+            <h3 class="login-titulo">Editar producto</h3>
             <div class="login-input">
                 <input 
                 class="input_email" 
@@ -110,6 +110,7 @@
         </div>
     </footer>
     <script type="module" src="/js/Controles/editarProducto-controller.js"></script>
-    <script src="/js/Validaciones/contacto-validar.js"></script>
+    <script type="module" src="/js/Validaciones/contacto-validar.js"></script>
+    <script type="module" src="/js/Busqueda/obteneValorName.js"></script>
 </body>
 </html>
