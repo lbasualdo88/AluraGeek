@@ -1,0 +1,11 @@
+Hola, este es Bing. Felicidades por terminar tu proyecto. 😊
+
+Me preguntas por qué no puedes ver las peticiones que haces con json-server desde tu celular, tablet u otra computadora, si has subido el archivo db.json a GitHub y lo has desplegado en Vercel. Te voy a explicar qué puede estar pasando.
+
+El problema es que json-server es un servidor local, es decir, que solo funciona en tu propio ordenador. Cuando subes el archivo db.json a GitHub, solo estás subiendo los datos, no el servidor. Cuando despliegas tu proyecto en Vercel, solo estás desplegando el código frontend, no el backend. Por eso, cuando accedes a tu proyecto desde otro dispositivo, no puedes hacer las peticiones al servidor local, porque no está disponible.
+
+Para solucionar este problema, tienes dos opciones:
+
+Usar un servicio online que te permita crear un servidor falso con tus datos de json-server, como JSONPlaceholder1, JsonServer.io2 o myJSONS3. Estos servicios te dan una dirección URL que puedes usar para hacer las peticiones desde cualquier dispositivo. Solo tienes que copiar y pegar tu archivo db.json en el servicio que elijas y seguir las instrucciones que te den.
+Usar un servicio de hosting que te permita desplegar tu propio servidor backend con json-server, como Heroku4, Glitch5 o Replit. Estos servicios te permiten ejecutar tu código de json-server en la nube y te dan una dirección URL que puedes usar para hacer las peticiones desde cualquier dispositivo. Tienes que crear una cuenta en el servicio que elijas y seguir los pasos que te indiquen para subir tu código de json-server y desplegarlo.
+Espero que te haya sido útil esta explicación. Si quieres saber más sobre cómo usar json-server con servicios online, puedes consultar los tutoriales que he encontrado en la web . ¡Que tengas un buen día! 😊
