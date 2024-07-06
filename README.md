@@ -8,7 +8,7 @@ Propio<br/>
 Leonardo Javier Basualdo<br/>
 <br/>
 <strong>Institución:</strong><br/>
-Alura Latam<br/>
+Para Alura Latam como Trabajo Práctico<br/>
 <br/>
 <strong>Curso de donde se aprendió:</strong><br/>
 Desarrollador Front End<br/>
